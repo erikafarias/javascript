@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Hola <span id="nombre"></span> <span id="apellido"></span></h1>
+    <h2>Tenés <span id="cantidad-dias"></span> días de vida</h2>
+    <button id="ingresar-datos">Ingresar mis datos</button>
+
+    <form id="formulario-datos" style="display: none">
+      <label for="nombre-form">Nombre:</label>
+      <input
+        type="text"
+        id="nombre-form"
+        name="nombre"
+        required
+        autocomplete="off"
+      />
+
+      <label for="apellido-form">Apellido:</label>
+      <input
+        type="text"
+        id="apellido-form"
+        name="apellido"
+        required
+        autocomplete="off"
+      />
+
+      <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+      <input
+        type="date"
+        id="fecha-nacimiento"
+        name="fecha-nacimiento"
+        required
+      />
+
+      <button type="button" id="enviar-datos">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
